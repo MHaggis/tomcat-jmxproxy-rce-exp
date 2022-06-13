@@ -14,7 +14,9 @@ The vulnerability is based on `JMXProxyServlet` in `Tomcat` and similar to **Spr
 
 The `JMXProxyServlet` in `Tomcat` provides JMX monitoring related functions. However, basic authentication is required to access it, so it is difficult to exploit it in general.
 
-Vulnerability are difficult to exploit directly and require high preconditions, but the third-party JMX management platform can bypass basic authentication, then RCE easily.
+Vulnerability is difficult to exploit directly and require high preconditions, but the third-party JMX management platform can bypass basic authentication, then RCE easily.
+
+(If the JMX management platform can be accessed anonymously or has an unauthorized access vulnerability, it can be bypassed)
 
 Affected:
 - Apache Tomcat All Versions
